@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Laboratorio 2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <h1>Laboratorio 2 PNC</h1>
+    <form action="#" th:action="@{/validacion}" th:object="${user}" method="post" >
+        <input th:field="*{nombre}" placeholder="Usuario" />
+        <input type="password" th:field="*{contrasennia}" placeholder="Contraseña" />
+        <button >Submit</button>
+    </form>
+    <h3>Jose Alejandro Olmedo Araniva</h3>
+</body>
+</html>
